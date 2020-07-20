@@ -4,8 +4,13 @@ body{
     background-color: rgb(233, 215, 224) !important;
 }
 #mainBody{
-    height: 500px;
+    min-height: 500px;
     width: 350px;
+}
+#mainBody{
+    width: 350px;
+    display: flex;
+    justify-content: center;
 }
 .container{
     min-width: 300px;
@@ -29,6 +34,8 @@ body{
 }
 #dateTime{
     width: 350px;
+    display: flex;
+    justify-content: center;
 }
 #dyDtTm{
     color: white;
@@ -48,4 +55,14 @@ p:nth-child(2){
 }
 p:nth-child(3){
     font-size: 35px;
+}
+#addBtn{
+    padding: 15px 18px;
+    border-radius: 50%;
+    font-size: 30px;
+}
+#addBtnDiv{
+    min-height: 10px;
+    display: flex;
+    justify-content: center;
 }
