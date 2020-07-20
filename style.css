@@ -1,0 +1,51 @@
+body{
+    /* background-image: url(Images/background.jpg);
+    background-size: cover;  */
+    background-color: rgb(233, 215, 224) !important;
+}
+#mainBody{
+    height: 500px;
+    width: 350px;
+}
+.container{
+    min-width: 300px;
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#greet{
+    color: rgb(160, 157, 157);
+}
+#header{
+    font-size: 20px;
+    margin: 5px 1px;
+}
+#dateTimeImg{
+    width: 350px;
+    border-radius: 20px;
+    position: absolute;
+}
+#dateTime{
+    width: 350px;
+}
+#dyDtTm{
+    color: white;
+    position: absolute;
+    width: 350px;
+    min-height: 197px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+p:first-child{
+    font-size: 25px;
+}
+p:nth-child(2){
+    font-size: 25px;
+}
+p:nth-child(3){
+    font-size: 35px;
+}
