@@ -5,10 +5,12 @@ body{
 }
 #toDoBody{
     min-height: 300px;
+    max-height: 300px;
     width: 350px;
     display: flex;
     justify-content: center;
     padding: 20px;
+    overflow-y: auto;
 }
 .container{
     min-width: 300px;
@@ -55,10 +57,11 @@ body{
 #time{
     font-size: 35px;
 }
-#addBtn{
+#delAllBtn,#addBtn{
     padding: 15px 18px;
     border-radius: 50%;
     font-size: 30px;
+    margin: 1px 30px !important;
 }
 #addBtnDiv{
     min-height: 10px;
@@ -72,16 +75,28 @@ li{
     margin: 10px;
 }
 ul{
-    /* display: flex !important;
-    min-width: 10px !important;
-    justify-content: center !important; */
     padding: 0px !important;
 }
 p,.btn,input{
     margin:2px !important;
 }
 .liBtn{
-    max-height: 42px;
+    max-height: 50px;
+    font-size: 25px !important;
+    border-radius: 50% !important;
+    padding: 10px 12px !important;
+}
+.liBtnAdd{
+    max-height: 50px;
+    font-size: 25px !important;
+    border-radius: 50% !important;
+    padding: 10px 13px !important;
+}
+.liBtnTAdd{
+    max-height: 50px;
+    font-size: 25px !important;
+    border-radius: 50% !important;
+    padding: 10px !important;
 }
 #toDos{
     margin-bottom: 0px !important;
@@ -89,6 +104,11 @@ p,.btn,input{
     padding: 20px;
     border-radius: 20px;
     color: white;
-    max-width: 200px;
+    max-width: 177px;
     word-wrap: break-word;
 }
+/* #mainLi:hover + .liBtn{
+    background-color: black !important;
+    display: block !important; */
+    /* transition: 2s;
+} */
