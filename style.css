@@ -4,8 +4,8 @@ body{
     background-color: rgb(233, 215, 224) !important;
 }
 #toDoBody{
-    min-height: 300px;
-    max-height: 300px;
+    min-height: 320px;
+    max-height: 320px;
     width: 350px;
     display: flex;
     justify-content: center;
@@ -107,8 +107,3 @@ p,.btn,input{
     max-width: 177px;
     word-wrap: break-word;
 }
-/* #mainLi:hover + .liBtn{
-    background-color: black !important;
-    display: block !important; */
-    /* transition: 2s;
-} */
