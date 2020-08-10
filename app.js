@@ -8,13 +8,19 @@ setInterval(GetTime, 1000)
 
 function GetTime(){
     var dateTime = new Date()
-    // alert(dateTime)
     var day = document.getElementById('day')
     var date = document.getElementById('date')
     var time = document.getElementById('time')
+    var formattedMinutes = dateTime.getMinutes()
+    var formattedHours = dateTime.getHours()
     day.innerHTML = days[dateTime.getDay()];
     date.innerHTML = months[dateTime.getMonth()] + ' ' + dateTime.getDate() + ', ' + dateTime.getFullYear();
-    time.innerHTML = dateTime.getHours() + ':' + dateTime.getMinutes()
+    if(formattedMinutes < 10)
+        formattedMinutes = "0" + formattedMinutes
+    if(formattedHours < 10)
+        formattedHours = "0" + formattedHours
+        
+    time.innerHTML = formattedHours + ':' + formattedMinutes
 }
 
 function addToDo(){
